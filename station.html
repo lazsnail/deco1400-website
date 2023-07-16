@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="js/aos/aos.css">
+        <link rel="stylesheet" href="js/tiny-slider/tiny-slider.css">
+		<meta charset="utf-8">
+		<title>Exosphere Cat Cafe</title>
+	</head>
+
+    <body>
+        <div id="station-1">
+            <div class="menu-nav">
+                <button class="menu-button" onclick="openForm()"></button>
+    
+                <div class="menu-popup" id="menu-form">
+                    <form class="form-container">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="rocket.html">The Rocket</a>
+                            </li>
+                            <li>
+                                <a href="bookings.html">Bookings</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+            </div>
+
+            <h1 data-aos="fade-up" data-aos-duraction=1000 data-aos-delay=200>THE SPACE STATION</h1>
+            <h2 data-aos="fade-up" data-aos-duraction=1000 data-aos-delay=500>THE LATEST INNOVATION IN FELINE TECHNOLOGY</h2>
+
+            <a href="#station-2">
+                <img data-aos="zoom-in" data-aos-delay=1000 src="images/arrow.png" alt="Scroll arrow", class="down-arrow">
+            </a>
+        </div>
+        <div id="station-2">
+            <div id="lock-screen">
+                <h2>CLASSIFIED INFORMATION</h2>
+                <h3>ENTER PASSWORD FOR ACCESS</h3>
+                <div id="keypad">
+                    <button class="key" id="key_1" onclick="passwordCheck(1)">1</button>
+                    <button class="key" id="key_2" onclick="passwordCheck(2)">2</button>
+                    <button class="key" id="key_3" onclick="passwordCheck(3)">3</button>
+                    <button class="key" id="key_4" onclick="passwordCheck(4)">4</button>
+                    <button class="key" id="key_5" onclick="passwordCheck(5)">5</button>
+                    <button class="key" id="key_6" onclick="passwordCheck(6)">6</button>
+                    <button class="key" id="key_7" onclick="passwordCheck(7)">7</button>
+                    <button class="key" id="key_8" onclick="passwordCheck(8)">8</button>
+                    <button class="key" id="key_9" onclick="passwordCheck(9)">9</button>
+                </div>
+            </div>
+            <div id="access-screen">
+                <h2>CLASSIFIED IMAGES</h2>
+                <h3>ACCESS GRANTED</h3>
+                <section id="slideshow">
+                    <article class="tiny-slider">
+                        <img src="images/slideshow-1.png" alt="Classified image">
+                        <img src="images/slideshow-2.png" alt="Classified image">
+                        <img src="images/slideshow-3.png" alt="Classified image">
+                        <img src="images/slideshow-4.jpg" alt="Classified image">
+                    </article>
+                </section>
+            </div>
+            
+        </div>
+        <div class="references" id="bookings-references">
+            <h2>References:</h2>
+            <p>Free-Photos (2015) Satellite Iss International Space. Pixabay https://pixabay.com/photos/satellite-iss-1030779/</p>
+            <p>pngkey (2018) International Space Station Vector - International Space Station Icon. pngkey https://www.pngkey.com/detail/u2q8i1r5w7w7y3t4_international-space-station-vector-international-space-station-icon/</p>
+            <p>Jon Daiello (2021) International Space Station. Noun Project https://thenounproject.com/term/international-space-station/24414/</p>
+            <p>Clker-Free-Vector-Images (2014) International Space Station. Pixabay https://pixabay.com/vectors/international-space-station-296780/</p>
+            <p>William Lin (2020) tiny-slider. Github https://github.com/ganlanyuan/tiny-slider</p>
+        </div>
+
+        <script src="js/aos/aos.js"></script>
+        <script src="js/tiny-slider/min/tiny-slider.js"></script>
+		<script src="js/script.js"></script>
+		<script>
+			AOS.init();
+		</script>
+    </body>
+
+</html>

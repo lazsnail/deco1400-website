@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+    font-size: 0.5em;
+    padding-bottom: 14%;
+}
+
+ul {
+    text-align: right;
+    font-family: Helvetica;
+    padding-right: 10%;
+    padding-top: 2%;
+}
+
+li {
+    padding-left: 2%;
+    list-style-type: none;
+    display: inline;
+    transition-timing-function: ease;
+
+}
+
+li a {
+    background: black;
+    color: white;
+    text-decoration: none;
+    transition: all 1s ease;
+
+}
+
+li:hover a {
+	background: white;
+	color: black;
+}
+
+body {
+    background-image: url("images/stars.png");
+    font-size: 2.5em;
+    padding-left: 10%;
+}
+
+body .h1 {
+    color: red;
+    font-family: Helvetica;
+    text-align: left;
+    height: 80px;
+}
+
+body .h2 {
+    color: yellow;
+    font-family: Helvetica;
+    text-align: left;
+    height: 80px;
+}
+
+body .h3 {
+    color: blue;
+    font-family: Helvetica;
+    text-align: left;
+    height: 80px;
+}

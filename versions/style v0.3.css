@@ -1,0 +1,465 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* CSS for index.html */
+body {
+    overflow-x: hidden;
+}
+
+/* First page on index.html */
+#page-1 {
+    display: block;
+    position: relative;
+    height: 100vh;
+    background-image: url("images/stars.jpg");
+    font-family: Helvetica;
+}
+
+/* Headings list */
+#page-1 ul {
+    padding-top: 3%;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+
+#page-1 li {
+    display: block;
+    position: relative;
+    margin-right: 3%;
+    list-style-type: none;
+    display: inline;
+    transition-timing-function: ease;
+}
+
+#page-1 li a {
+    display: inline-block;
+    position: relative;
+
+    font-size: 1.2em;
+    background: black;
+    color: white;
+    text-decoration: none;
+    transition: all 1s ease;
+
+    padding: 3px 10px 3px 10px;
+}
+
+#page-1 li a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+#page-1 li a:hover {
+    color: white;
+    text-shadow: 0 0 8px white;
+}
+
+#page-1 li a:hover:after {
+    width: 100%; 
+    left: 0; 
+}
+
+/* Keyframe for cats moving across screen */
+@keyframes space-cats {
+	0% {
+		left: -20%;
+	}
+	100% {
+		left: 100%;
+	}
+}
+
+/* Keyframe for logo cat tilt */
+@keyframes cat-tilt {
+	0% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(-180deg);
+	}
+}
+
+/* Space cats images */
+.cats img {
+    max-width: 6%;
+    position: absolute;
+    left: -20%;
+
+    animation: space-cats 20s infinite linear, cat-tilt 5s infinite linear;
+}
+
+.cats img:nth-child(2) {
+    margin-top: 28em;
+    animation: space-cats 18s infinite linear reverse, cat-tilt 6s infinite linear;
+    animation-delay: 2s;
+}
+
+.cats img:nth-child(3) {
+    margin-top: 30em;
+    animation: space-cats 21s infinite linear, cat-tilt 7s infinite linear reverse;
+    animation-delay: 3s;
+}
+
+.cats img:nth-child(4) {
+    margin-top: 1em;
+    animation: space-cats 19s infinite linear reverse, cat-tilt 6s infinite linear;
+    animation-delay: 4s;
+}
+
+.logo-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 7%;
+    margin-top: 7%;
+    
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.logo {
+    transition: all 250ms;
+}
+
+.logo:hover {
+    transform: rotate(15deg);
+}
+
+/* Logo text */
+.text {
+    font-size: 2.2em;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+.text-1 {
+    height: 65px;
+    color: red;
+}
+
+.text-2 {
+    height: 65px;
+    color: yellow;
+    width: 140px;
+}
+
+.text-3 {
+    width: 200px;
+    height: 65px;
+    color: rgb(0, 119, 255);
+}
+
+/* Keyframe for scroll arrow */
+@keyframes arrow-hover {
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Scroll arrow */
+.down-arrow {
+    display: block;
+    width: 4%;
+    animation: arrow-hover 1.5s infinite linear;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#page-1 .down-arrow {
+    margin-top: 9%;
+}
+
+/* Second page on index.html */
+#page-2 {
+    display: block;
+    position: relative;
+    height: 100vh;
+    color: white;
+    background-color: black;
+
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+#page-2 .title {
+    color: #feda4a;
+    text-align: center;
+    padding-top: 3%;
+    font-size: 3em;
+    transition: 0.5s;
+    letter-spacing: 6px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+#page-2 article {
+    color: #feda4a;
+    text-align: center;
+    margin-top: 6%;
+    font-size: 2em;
+    line-height: 150%;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.return-arrow {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: 4%;
+    width: 6%;
+}
+
+.return-arrow p {
+    text-align: center;
+}
+
+#page-2 .return-arrow {
+    margin-top: 6%;
+}
+
+.up-arrow {
+    transform: rotate(180deg);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+    margin-bottom: 10%;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+}
+
+footer a {
+    padding: 2px 4px 2px 4px;
+    text-decoration: none;
+    color: white;
+    outline: 2px solid #feda4a;
+}
+
+
+/* CSS for rocket.html */
+#rocket-1 {
+    height: 100vh;
+    background-image: url("images/rocket-launch.jpg");
+    background-size: 100%;
+    font-family: Helvetica;
+}
+
+.menu-button {
+    position: fixed;
+    margin-top: 1%;
+    margin-left: 0.7%;
+    padding: 25px 25px 25px 25px;
+    background: transparent url(images/hamburger.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.menu-popup {
+    display: none;
+    position: fixed;
+    margin-top: 5%;
+    border: 3px solid #f1f1f1;
+}
+
+.form-container {
+    padding: 10px;
+    background-color: black;
+}
+
+.form-container li {
+    padding-bottom: 15%;
+    list-style: none;
+}
+
+.form-container li a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-container .btn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#rocket-1 h1 {
+    color: white;
+    text-align: center;
+    padding-top: 16%;
+    font-size: 4em;
+}
+
+#rocket-1 h2 {
+    color: white;
+    text-align: center;
+}
+
+#rocket-1 footer {
+    outline: 2px solid red;
+}
+
+#rocket-1 .down-arrow {
+    margin-top: 3%;
+}
+
+#rocket-2 {
+    height: 100vh;
+    background-color: black;
+    font-family: Helvetica;
+    color: white;
+}
+
+.stats {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.stat-1 {
+    margin-right: 10%;
+}
+
+#rocket-2 h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+#rocket-2 h2 {
+    margin-top: 3%;
+    font-size: 2em;
+}
+
+.info {
+    display: flex;
+}
+
+#rocket-2 article {
+    margin-top: 7%;
+    margin-left: 15%;
+    font-size: 1.5em;
+    max-width: 30%;
+}
+
+#rocket-2 .info img {
+    display: block;
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 20%;
+    height: 20%;
+}
+
+#rocket-2 .return-arrow {
+    margin-top: 2%;
+}
+
+
+/* CSS for bookings.html */
+#bookings {
+    height: 155vh;
+    background-color: black;
+    font-family: Helvetica;
+    color: white;
+}
+
+#bookings h1 {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 3em;
+}
+
+#bookings section {
+    position: relative;
+    outline: 2px solid white;
+    width: 80%;
+    display: flex;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+#bookings img {
+    width: 25%;
+}
+
+#bookings h2 {
+    position: absolute;
+    margin-left: 40%;
+    font-size: 1.5em;
+    top: 30%;
+}
+
+#bookings h3 {
+    position: absolute;
+    margin-left: 40%;
+    font-size: 1em;
+    top: 60%;
+}
+
+#bookings label {
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    margin-left: 70%;
+}
+
+#bookings input{
+    position: absolute;
+    top: 50%;
+    margin-left: 70%;
+}
+
+#bookings footer {
+    position: absolute;
+    color: white;
+    width: 100%;
+    margin-top: 5%;
+}
+
+#bookings footer label {
+    position: relative;
+    margin-left: 5%;   
+}
+
+#bookings footer input {
+    position: relative;
+    margin-left: 0.5%;
+}
+
+#bookings footer input[type="email"] {
+    width: 15%;
+}
+
+#bookings footer input[type="submit"] {
+    padding: 2px 7px 2px 7px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}

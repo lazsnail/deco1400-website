@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="js/aos/aos.css">
+		<meta charset="utf-8">
+		<title>Exosphere Cat Cafe</title>
+	</head>
+
+    <body>
+        <div id="bookings">
+            <button class="menu-button" onclick="openForm()"></button>
+    
+            <div class="menu-popup" id="menu-form">
+                <form class="form-container">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="rocket.html">The Rocket</a>
+                        </li>
+                        <li>
+                            <a href="bookings.html">Bookings</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+    
+            <h1>BOOKINGS</h1>
+    
+            <section class="booking-1">
+                <img src="images/capsule-3.jpg" alt="Capsule booking 1">
+                
+                <h2>Room type 1</h2>
+                <h3>$500/night</h3>
+    
+                <label>Check booking availability:</label>
+                <input type="date">
+            </section>
+            
+            <section class="booking-1">
+                <img src="images/capsule-1.jpg" alt="Capsule booking 2">
+                
+                <h2>Room type 2</h2>
+                <h3>$700/night</h3>
+    
+                <label>Check booking availability:</label>
+                <input type="date">
+            </section>
+            
+            <section class="booking-1">
+                <img src="images/capsule-2.jpg" alt="Capsule booking 3">
+                
+                <h2>Room type 3</h2>
+                <h3>$900/night</h3>
+    
+                <label>Check booking availability:</label>
+                <input type="date">
+            </section>
+    
+            <footer>
+                <form>
+                    <label>Enter your email to subscribe to our newsletter:</label>
+                    <input type="email" id="email" name="emal">
+                    <input type="submit">
+                </form>
+            </footer>
+        </div>
+    
+        <div class="references" id="bookings-references">
+            <h2>References:</h2>
+            <p>Mr. James Kelley (2021) Capsule Hotel Beds in Kyoto, Japan. Shutterstock https://www.shutterstock.com/image-photo/capsule-hotel-beds-kyoto-japan-735728935</p>
+            <p>KHMILSTOCK (2021) Futuristic designed silver sleeping capsules with blue lights inside. Modern hotel. Shutterstock https://www.shutterstock.com/image-photo/futuristic-designed-silver-sleeping-capsules-blue-1341600356</p>
+            <p>Solomakha (2021) HOSTEL GALAXY PODS, Chinatown, SINGAPORE, FEB 12, 2018: Interior of capsule hotel beds in Singapore. Shutterstock https://www.shutterstock.com/image-photo/hostel-galaxy-pods-chinatown-singapore-feb-1044111781</p>
+        </div>
+
+        <script src="js/aos/aos.js"></script>
+		<script src="js/script.js"></script>
+		<script>
+			AOS.init();
+		</script>
+    </body>
+
+    <script>
+        document.getElementById("menu-form").style.display = "none"
+    
+        function openForm() {
+            if (document.getElementById("menu-form").style.display == "none") {
+                document.getElementById("menu-form").style.display = "block"
+            }
+            else {
+                document.getElementById("menu-form").style.display = "none"
+            }
+        }
+    
+        function closeForm() {
+            document.getElementById("menu-form").style.display = "none";
+        }
+    </script>
+
+</html>

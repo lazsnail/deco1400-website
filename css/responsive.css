@@ -1,0 +1,344 @@
+/* File for responsive design */
+
+/* Layout adjustments for tablet screens */
+@media only screen and (max-width: 1000px) and (min-width: 701px) {
+    #index-1 {
+        background-size: cover;
+    }
+
+    #index-1 .down-arrow {
+        margin-top: 3%;
+    }
+
+    .menu-nav {
+        width: 15%;
+    }
+
+    .menu-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .form-container li a {
+        font-size: 1.2em;
+    }
+
+    .cats {
+        max-width: 70px;
+    }
+
+    .logo-container {
+        margin-top: 10%;
+    }
+
+    .logo-image {
+        width: auto;
+        height: auto;
+    }
+
+    .logo-image img {
+        height: auto;
+    }
+
+    .text {
+        font-size: 1.7em;
+    }
+
+    #index-1 .down-arrow {
+        margin-top: 5%;
+        width: 75px;
+    }
+
+    #index-2 h1 {
+        font-size: 3em;
+    }
+
+    #index-2 article {
+        font-size: 1.5em;
+        width: 75%;
+    }
+
+    #index-2 .return-arrow {
+        margin-top: 0;
+        width: 9%;
+    }
+
+    #rocket-1 {
+        background-size: cover;
+    }
+
+    #rocket-1 h1 {
+        padding-top: 25%;
+    }
+
+    #rocket-1 .down-arrow {
+        width: 7%;
+    }
+
+    .stats {
+        padding-top: 10%;
+        text-align: center;
+    }
+
+    .stat-1 {
+        margin-right: 5%;
+    }
+
+    #rocket-2 article {
+        margin-left: 6%;
+        font-size: 1.2em;
+        max-width: 40%;
+    }
+
+    #rocket-2 .info img {
+        margin-right: 10%;
+        width: 25%;
+    }
+
+    #rocket-2 .return-arrow {
+        width: 15%;
+    }
+
+    #bookings {
+        height: auto;
+    }
+
+    #bookings section {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #bookings section label {
+        font-size: 0.9em;
+    }
+
+    #bookings section img {
+        width: 40%;
+    }
+
+    #bookings h2 {
+        text-align: center;
+    }
+
+    #bookings section h2 {
+        margin-left: 45%;
+    }
+
+    #bookings h3 {
+        margin-left: 45%;
+    }
+
+    #bookings footer {
+        position: relative;
+        padding-bottom: 5%;
+    }
+
+    #station-1 h1 {
+        padding-top: 20%;
+    }
+
+    #station-1 .down-arrow {
+        width: 8%;
+    }
+
+}
+
+/* Layout adjustments for mobile screens */
+@media only screen and (max-width: 700px) {
+    #index-1 {
+        background-size: cover;
+    }
+
+    .menu-nav {
+        right: 1%;
+        width: 20%;
+    }
+
+    .menu-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .form-container li a {
+        font-size: 1em;
+    }
+    
+    .cats {
+        max-width: 50px;
+    }
+
+    .logo-container {
+        margin-top: 10%;
+        width: 90%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .logo-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo-image img {
+        width: 7em;
+        height: auto;
+    }
+
+    .text {
+        font-size: 1.5em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .down-arrow {
+        width: 50px;
+    }
+
+    #index-1 .down-arrow {
+        margin-top: 10%;
+    }
+
+    #index-2 h1 {
+        font-size: 3em;
+    }
+
+    #index-2 article {
+        font-size: 1.2em;
+        width: 75%;
+    }
+
+    #index-2 .return-arrow {
+        margin-top: 0;
+        width: 15%;
+    }
+
+    #rocket-1 {
+        background-size: cover;
+    }
+
+    #rocket-1 h1 {
+        padding-top: 35%;
+    }
+
+    #rocket-2 h1 {
+        text-align: center;
+    }
+
+    .stats {
+        padding-top: 7%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .stat-1 {
+        margin-right: 0;
+        padding-bottom: 2%;
+    }
+
+    #rocket-2 article {
+        margin-left: 6%;
+        font-size: 1em;
+        max-width: 40%;
+    }
+
+    #rocket-2 .info img {
+        margin-right: 10%;
+        width: 30%;
+    }
+
+    #rocket-2 .return-arrow {
+        width: 15%;
+    }
+
+    #bookings {
+        position: relative;
+        height:100%;
+    }
+
+    #bookings section {
+        margin-bottom: 0;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        height: 450px;
+        width: 400px;
+    }
+
+    #bookings img {
+        position: absolute;
+        width: 100%;
+        height: 250px;
+    }
+
+    #bookings h2 {
+        font-size: 2em;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #bookings section h2 {
+        margin-top: 35%;
+        margin-left: 0;
+    }
+
+    #bookings h3 {
+        font-size: 1.2em;
+        margin-top: 10%;
+        margin-left: 0;
+    }
+
+    #bookings section label {
+        margin-top: 50%;
+        margin-left: 0;
+    }
+
+    #bookings section input {
+        margin-top: 40%;
+        margin-left: 0;
+    }
+
+    #bookings footer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 5%;
+        padding-bottom: 5%;
+        align-items: center;
+    }
+
+    #bookings footer input[type="email"] {
+        width: 50%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    #bookings footer input[type="submit"] {
+        padding: 2px 7px 2px 7px;
+    }
+
+    #bookings .available {
+        margin-top: 25%;
+        text-align: center;
+    }
+
+    #station-1 h1 {
+        padding-top: 25%;
+    }
+
+    #station-1 .down-arrow {
+        width: 12%;
+    }
+
+    #slideshow .tns-outer {
+        max-width: 90%;
+    }
+
+    #access-screen {
+        width: 70%;
+    }
+
+}

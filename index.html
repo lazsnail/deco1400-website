@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="js/aos/aos.css">
+		<meta charset="utf-8">
+		<title>Exosphere Cat Cafe</title>
+	</head>
+
+    <body>
+        <div id="index-1">
+            <div class="menu-nav">
+                <button class="menu-button" id="index-menu" onclick="openForm()"></button>
+    
+                <div id="menu-form">
+                    <form class="form-container">
+                        <ul>
+                            <li>
+                                <a href="rocket.html">The Rocket</a>
+                            </li>
+                            <li>
+                                <a href="station.html">The Space Station</a>
+                            </li>
+                            <li>
+                                <a href="bookings.html">Bookings</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+            </div>
+            
+
+            <img class="cats" id="cat-1" src="images/cat-1.png" alt="Space cat 1">
+            <img class="cats" id="cat-2" src="images/cat-2.png" alt="Space cat 2">
+    
+            <div class="logo-container">
+                <div class="logo-image">
+                    <img src="images/logo_cat.png", alt="Cat logo">
+                </div>
+                <div class="text">
+                    <div class="text-1">
+                        EXOSPHERE
+                    </div>
+                    <div class="text-2">
+                        CAT
+                    </div>
+                    <div class="text-3">
+                        CAFE
+                    </div>
+                </div>
+            </div>
+            
+            <img class="cats" id="cat-3" src="images/cat-3.png" alt="Space cat 3">
+            <img class="cats" id="cat-4" src="images/cat-4.png" alt="Space cat 4">
+
+            <a href="#index-2">
+                <img src="images/arrow.png" alt="Scroll arrow", class="down-arrow">
+            </a>
+        </div>
+    
+        <div id="index-2">
+
+            <h1 data-aos="fade-up" data-aos-duration="2000">CATS IN SPACE</h1>
+    
+            <article data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+                <p>Years ago, a clowder of cats decided that there were too many humans on earth.
+                They decided to go somewhere where their human interaction could be limited: space!
+                The kitties built their own space station where only a limited number of people are allowed at a time.</p>
+                <p>We invite you to take your next vacation drinking coffee and petting cats in space.</p>
+            </article>
+    
+            <div class="return-arrow">
+                <a href="#index-1">
+                    <img src="images/arrow.png" alt="Scroll arrow", class="up-arrow">
+                </a>
+                <p>Back to top</p>
+            </div>
+        </div>
+    
+        <div class="references" id="index-references">
+            <h2>References:</h2>
+            <p>Sudowoodo. (2021, March 31) Cute cartoon cat drawing set, different breeds and colors. Hand drawn kitty doodles in simple kawaii style, vector clip art illustration. Shutterstock https://www.shutterstock.com/image-vector/cute-cartoon-cat-drawing-set-different-1616161213</p>
+            <p>pngimg. (2021) Cat PNG image with transparent background. pngimg https://pngimg.com/image/50525</p>
+            <p>Michał Sajnóg (2018) aos. Github https://github.com/michalsnik/aos</p>
+        </div>
+        
+        <script src="js/aos/aos.js"></script>
+		<script src="js/script.js"></script>
+		<script>
+			AOS.init();
+		</script>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style v0.3.css">
+		<meta charset="utf-8">
+		<title>Exosphere Cat Cafe</title>
+	</head>
+
+    <div id="bookings">
+
+        <button class="menu-button" onclick="openForm()"></button>
+
+        <div class="menu-popup", id="myForm">
+            <form class="form-container">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="rocket.html">The Rocket</a>
+                    </li>
+                    <li>
+                        <a href="bookings.html">Bookings</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+
+        <h1>BOOKINGS</h1>
+
+        <section class="booking-1">
+            <img src="images/capsule-3.jpg" alt="Capsule booking 1">
+            
+            <h2>Room type 1</h2>
+            <h3>$500/night</h3>
+
+            <label>Check booking availability:</label>
+            <input type="date" name="trip-start">
+        </section>
+        
+        <section class="booking-1">
+            <img src="images/capsule-1.jpg" alt="Capsule booking 2">
+            
+            <h2>Room type 2</h2>
+            <h3>$700/night</h3>
+
+            <label>Check booking availability:</label>
+            <input type="date" name="trip-start">
+        </section>
+        
+        <section class="booking-1">
+            <img src="images/capsule-2.jpg" alt="Capsule booking 3">
+            
+            <h2>Room type 3</h2>
+            <h3>$900/night</h3>
+
+            <label>Check booking availability:</label>
+            <input type="date" name="trip-start">
+        </section>
+
+        <footer>
+            <form>
+                <label>Enter your email to subscribe to our newsletter:</label>
+                <input type="email" id="email" name="emal">
+                <input type="submit">
+            </form>
+        </footer>
+    </div>
+
+</html>
+
+<script>
+    function openForm() {
+        if (document.getElementById("myForm").style.display == "none") {
+            document.getElementById("myForm").style.display = "block"
+        }
+        else {
+            document.getElementById("myForm").style.display = "none"
+        }
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+</script>

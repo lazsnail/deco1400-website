@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="js/aos/aos.css">
+		<meta charset="utf-8">
+		<title>Exosphere Cat Cafe</title>
+	</head>
+
+    <body>
+
+        <div id="index-1">
+            <button class="menu-button" onclick="openForm()"></button>
+
+            <div id="menu-form">
+                <form class="form-container">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="rocket.html">The Rocket</a>
+                        </li>
+                        <li>
+                            <a href="bookings.html">Bookings</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+            <ul>
+                <li>
+                    <a href="rocket.html">THE ROCKET</a>
+                </li>
+                <li>
+                    <a>THE SPACE STATION</a>
+                </li>
+                <li>
+                    <a>CAFE</a>
+                </li>
+                <li>
+                    <a href="bookings.html">BOOKINGS</a>
+                </li>
+                <li>
+                    <a>CONTACT</a>
+                </li>
+            </ul>
+    
+            <section class="cats">
+                <img src="images/cat-1.png" alt="Space cat 1">
+                <img src="images/cat-2.png" alt="Space cat 2">
+                <img src="images/cat-3.png" alt="Space cat 3">
+                <img src="images/cat-4.png" alt="Space cat 4">
+            </section>
+    
+            <div class="logo-container">
+                <div class="logo-image">
+                    <img src="images/logo_cat.png", alt="Cat logo">
+                </div>
+                <div class="text">
+                    <div class="text-1">
+                        EXOSPHERE
+                    </div>
+                    <div class="text-2">
+                        CAT
+                    </div>
+                    <div class="text-3">
+                        CAFE
+                    </div>
+                </div>
+            </div>
+    
+            <a href="#index-2">
+                <img src="images/arrow.png" alt="Scroll arrow", class="down-arrow">
+            </a>
+        </div>
+    
+        <div class="main" id="index-2">
+
+            <div class="title">
+                <p data-aos="fade-up" data-aos-duration="2000">Episode X</p>
+                <h1 data-aos="fade-up" data-aos-duration="2000">CATS IN SPACE</h1>
+            </div>
+    
+            <article data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+                <p>Years ago, a clowder of cats decided that there were too many humans on earth.
+                They decided to go somewhere where their human interaction could be limited: space!
+                The kitties built their own space station where only a limited number of people are allowed at a time.</p>
+            </article>
+    
+            <div class="return-arrow">
+                <a href="#index-1">
+                    <img src="images/arrow.png" alt="Scroll arrow", class="up-arrow">
+                </a>
+                <p>Back to top</p>
+            </div>
+    
+            <footer>
+                <a href="rocket.html">Continue to The Rocket</a>
+            </footer>
+        </div>
+    
+        <div class="references" id="index-references">
+            <h2>References:</h2>
+            <p>Sudowoodo. (2021, March 31) Cute cartoon cat drawing set, different breeds and colors. Hand drawn kitty doodles in simple kawaii style, vector clip art illustration. Shutterstock. https://www.shutterstock.com/image-vector/cute-cartoon-cat-drawing-set-different-1616161213</p>
+            <p>pngimg. (2021) Cat PNG image with transparent background. pngimg. https://pngimg.com/image/50525</p>
+        </div>
+        
+        <script src="js/aos/aos.js"></script>
+		<script src="js/script.js"></script>
+		<script>
+			AOS.init();
+		</script>
+
+    </body>
+
+    <script>
+        document.getElementById("menu-form").style.display = "none"
+
+        function openForm() {
+            if (document.getElementById("menu-form").style.display == "none") {
+                document.getElementById("menu-form").style.display = "block"
+            }
+            else {
+                document.getElementById("menu-form").style.display = "none"
+            }
+        }
+
+        function closeForm() {
+            document.getElementById("menu-form").style.display = "none";
+        }
+    </script>
+</html>

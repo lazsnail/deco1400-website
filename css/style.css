@@ -1,0 +1,672 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Helvetica;
+    color: #feda4a;
+}
+
+/* Menu nav flexbox div */
+.menu-nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 300px;
+    margin-top: 1%;
+    right: 2%;
+    z-index: 2;
+}
+
+@keyframes menu-fade {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+/* Menu nav button */
+.menu-button {
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    background: transparent url(../images/hamburger.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#index-1 .menu-button {
+    animation: menu-fade 2s infinite linear;
+}
+
+/* Menu popup form */
+#menu-form {
+    display: none;
+    border: 3px solid #f1f1f1;
+    z-index: 2;
+}
+
+.form-container {
+    padding: 10px;
+    background-color: black;
+    outline: 1px solid black;
+}
+
+.form-container li {
+    padding-bottom: 15%;
+    list-style: none;
+}
+
+.form-container li a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.form-container .btn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-container li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-container li a:hover:after {
+    width: 100%; 
+    left: 0; 
+}
+
+
+/* Styling for index.html */
+body {
+    overflow-x: hidden;
+    font-family: Helvetica;
+}
+
+/* First page on index.html */
+#index-1 {
+    height: 100vh;
+    background-image: url("../images/stars.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Helvetica;
+}
+
+/* Keyframe for cats moving across screen */
+@keyframes space-cats {
+	0% {
+		left: -20%;
+	}
+	100% {
+		left: 100%;
+	}
+}
+
+/* Keyframe for cats spinning */
+@keyframes cat-rotate {
+	0% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(-180deg);
+	}
+}
+
+/* Space cats images */
+.cats {
+    position: relative;
+    max-width: 7%;
+    left: -20%; /* Start off sreen */
+}
+
+#cat-1 {
+    top: 10%;
+    animation: space-cats 20s infinite linear, cat-rotate 5s infinite linear;
+}
+
+#cat-2 {
+    top: 13%;
+    animation: space-cats 18s infinite linear reverse, cat-rotate 6s infinite linear;
+    animation-delay: 2s;
+}
+
+#cat-3 {
+    animation: space-cats 21s infinite linear, cat-rotate 7s infinite linear reverse;
+    animation-delay: 3s;
+}
+
+#cat-4 {
+    top: 5%;
+    animation: space-cats 19s infinite linear reverse, cat-rotate 6s infinite linear;
+    animation-delay: 4s;
+}
+
+.logo-container {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.logo-image {
+    transition: all 250ms;
+}
+
+/* Logo cat animation on hover */
+.logo-image:hover {
+    transform: rotate(15deg);
+}
+
+.logo-image img {
+    max-width: 9em;
+    height: auto;
+}
+
+/* Logo text */
+.text {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 60%;
+    font-size: 2.2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-1 {
+    color: red;
+}
+
+.text-2 {
+    color: yellow;
+}
+
+.text-3 {
+    color: rgb(0, 119, 255);
+}
+
+/* Keyframe for scroll arrow */
+@keyframes arrow-hover {
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Scroll arrow */
+.down-arrow {
+    display: block;
+    width: 4%;
+    animation: arrow-hover 1.5s infinite linear;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#index-1 .down-arrow {
+    position: relative;
+    margin-top: 3%;
+}
+
+/* Second page on index.html */
+#index-2 {
+    height: 100vh;
+    color: white;
+    background-color: black;
+
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+#index-2 h1 {
+    display: block;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    text-align: center;
+    font-size: 5em;
+
+    color: #feda4a;
+    font-size: 5em;
+    letter-spacing: 6px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+#index-2 article {
+    color: #feda4a;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+    font-size: 2em;
+    line-height: 150%;
+    font-weight: 600;
+    letter-spacing: 3px;
+    width: 82%;
+    z-index: 1;
+}
+
+.return-arrow {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: 4%;
+    width: 6%;
+    color: white
+}
+
+.return-arrow p {
+    text-align: center;
+}
+
+#index-2 .return-arrow {
+    margin-top: 6%;
+}
+
+.up-arrow {
+    transform: rotate(180deg);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+    margin-bottom: 10%;
+}
+
+.references {
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.references p {
+    margin-top: 1%;
+}
+
+
+/* Styling for rocket.html */
+/* First page on rocket.html */
+#rocket-1 {
+    height: 100vh;
+    background-image: url("../images/rocket-launch.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Helvetica;
+}
+
+#rocket-1 h1 {
+    color: white;
+    text-align: center;
+    padding-top: 16%;
+    font-size: 4em;
+    text-shadow: 2px 2px black;
+}
+
+#rocket-1 h2 {
+    color: white;
+    text-align: center;
+}
+
+#rocket-1 .down-arrow {
+    margin-top: 3%;
+}
+
+/* Second page on rocket.html */
+#rocket-2 {
+    height: 100vh;
+    background-color: black;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #feda4a;
+}
+
+.stats {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.stat-1 {
+    margin-right: 5%;
+}
+
+.stat-2 {
+    margin-left: 5%;
+}
+
+#rocket-2 h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+#rocket-2 h2 {
+    margin-top: 3%;
+    font-size: 2em;
+}
+
+.info {
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+#rocket-2 article {
+    margin-left: 15%;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.5em;
+    max-width: 30%;
+}
+
+#rocket-2 .info img {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 22%;
+
+    width: 20%;
+}
+
+#rocket-2 .return-arrow {
+    margin-top: 2%;
+}
+
+
+/* Styling for bookings.html */
+#bookings {
+    height: 100%;
+    background-color: black;
+    font-family: Helvetica;
+    color: #feda4a;
+}
+
+#bookings .form-container {
+    z-index: 3;
+}
+
+#bookings h1 {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 3em;
+}
+
+
+#bookings .menu-nav {
+    z-index: 2;
+}
+
+#bookings section {
+    display: flex;
+    position: relative;
+    outline: 2px solid white;
+    width: 80%;
+    display: flex;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+#bookings img {
+    width: 25%;
+}
+
+#bookings h2 {
+    text-align: center;
+}
+
+#bookings section h2 {
+    position: absolute;
+    margin-left: 40%;
+    font-size: 1.5em;
+    top: 30%;
+}
+
+#bookings h3 {
+    position: absolute;
+    margin-left: 40%;
+    font-size: 1em;
+    top: 60%;
+}
+
+#bookings label {
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    margin-left: 70%;
+}
+
+#bookings input{
+    position: absolute;
+    top: 50%;
+    margin-left: 70%;
+}
+
+/* Availability text */
+#bookings .available {
+    width: 50%;
+    top: 70%;
+    color: green;
+}
+
+#bookings footer {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+}
+
+#bookings footer label {
+    position: relative;
+    margin-left: 5%;   
+}
+
+#bookings footer input {
+    position: relative;
+    margin-left: 0.5%;
+}
+
+#bookings footer input[type="email"] {
+    width: 15%;
+}
+
+#bookings footer input[type="submit"] {
+    padding: 2px 7px 2px 7px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+#valid {
+    padding-top: 1%;
+    background-color: black;
+    text-align: center;
+}
+
+#valid-email {
+    text-align: center;
+    margin-left: 0;
+    position: relative;
+    color: #feda4a;
+    background-color: black;
+}
+
+/* Styling for station.html */
+#station-1 {
+    background-image: url("../images/station.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#station-1 h1 {
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    text-align: center;
+    font-size: 4em;
+    padding-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#station-1 h2 {
+    text-align: center;
+    text-shadow: 2px 2px 8px black;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#station-1 .down-arrow {
+    width: 5%;
+    margin-top: 5%;
+}
+
+#station-2 {
+    height: 100vh;
+    background-color: black;
+}
+
+#lock-screen {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#access-screen {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#access-screen h2 {
+    text-align: center;
+}
+
+#access-screen h3 {
+    color: green;
+}
+
+#slideshow .tns-outer {
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 1em;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#slideshow img {
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#slideshow .tns-controls {
+    display: none;
+    text-align: center;
+
+}
+
+#slideshow .tns-controls button {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+body.js #slideshow .tns-controls {
+    display: block;
+}
+
+#slideshow .tns-nav button {
+    background-color: #feda4a;
+    padding: 10px 10px 10px 10px;
+	height: 20%;
+	border-radius: 10px;
+}
+
+#lock-screen h2 {
+    padding-bottom: 1%;
+}
+
+#lock-screen h3 {
+    padding-bottom: 2%;
+}
+
+#keypad {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 400px;
+}
+
+#keypad button {
+    position: relative;
+    width: 32%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 2%;
+    font-size: 2em;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+}
+
+#controls button {
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 20px 20px 20px 20px;
+    font-size: 1.5em;
+}
+
+#station-2 button {
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+
+#station-2 button:hover {
+    background-color:#feda4a;
+    color: black;
+}

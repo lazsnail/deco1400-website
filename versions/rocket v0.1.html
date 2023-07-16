@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style v0.3.css">
+		<meta charset="utf-8">
+		<title>Exosphere Cat Cafe</title>
+	</head>
+
+    <div id="rocket-1">
+
+        <button class="menu-button" onclick="openForm()"></button>
+
+        <div class="menu-popup", id="myForm">
+            <form class="form-container">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="rocket.html">The Rocket</a>
+                    </li>
+                    <li>
+                        <a href="bookings.html">Bookings</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+
+        <h1>THE ROCKET</h1>
+        <h2>FIRST COMMERCIAL SPACE FLIGHT ROCKET</h2>
+
+        <a href="#rocket-2">
+            <img src="images/arrow.png" alt="Scroll arrow", class="down-arrow">
+        </a>
+    </div>
+
+    <div id="rocket-2">
+        <div class="stats">
+            <div class="stat-1">
+                <h1>185</h1>
+                <h2>FLIGHTS COMPLETED</h2>
+            </div>
+            <div class="stat-2">
+                <h1>1070</h1>
+                <h2>PASSENGERS DELIVERED</h2>
+            </div>
+        </div>
+
+        <div class="info">
+            <article>
+                Atlas V is an expendable launch system and the fifth major version in the Atlas rocket family. It was originally designed by Lockheed Martin, now being operated by United Launch Alliance, a joint venture between Lockheed Martin and Boeing. Each Atlas V rocket consists of two main stages.
+            </article>
+    
+            <img src="images/rocket-icon.png" alt="Rocket icon">
+        </div>
+
+        <div class="return-arrow">
+            <a href="#rocket-1">
+                <img src="images/arrow.png" alt="Scroll arrow", class="up-arrow">
+            </a>
+            <p>Back to top</p>
+        </div>
+        
+        <footer>
+            <a href="bookings.html">Continue to Bookings</a>
+        </footer>
+    </div>
+
+<script>
+    function openForm() {
+        if (document.getElementById("myForm").style.display == "none") {
+            document.getElementById("myForm").style.display = "block"
+        }
+        else {
+            document.getElementById("myForm").style.display = "none"
+        }
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+</script>
+    
+</html>
